@@ -1,5 +1,5 @@
 # Amr Elkheir — Home Lab
-**Information Technology Student | Network Engineering / Data Center Focus | 2026**
+CCNA | Network Engineering| 2026**
 
 A hands-on enterprise-style home lab built to develop practical skills in switching, routing, VLAN design, DHCP services, and network troubleshooting using Aruba and Cisco hardware. This lab is designed to simulate real data center and enterprise network environments while building toward a career in data center operations and network engineering.
 
