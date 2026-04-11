@@ -18,7 +18,8 @@ A hands-on enterprise-style home lab built to develop practical skills in switch
 
 ## Network Topology
 
-file:///D:/DataCenterMini.drawio.png
+<img width="1928" height="1231" alt="image" src="https://github.com/user-attachments/assets/f9d0bdcf-cf76-4707-831f-77cf35a5170b" />
+
 
 ```text
 Internet / ISP
