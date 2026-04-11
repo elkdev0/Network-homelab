@@ -18,7 +18,7 @@ A hands-on enterprise-style home lab built to develop practical skills in switch
 
 ## Network Topology
 
-> _Add your Draw.io diagram export here_
+file:///D:/DataCenterMini.drawio.png
 
 ```text
 Internet / ISP
