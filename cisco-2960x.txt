@@ -1,0 +1,38 @@
+enable
+configure terminal
+
+vlan 20
+ name GUEST
+exit
+
+vlan 60
+ name IOT
+exit
+
+
+interface gigabitEthernet0/1
+ description UPLINK-TO-ARUBA-3810M
+ switchport mode trunk
+ switchport trunk allowed vlan 20,60
+ switchport nonegotiate
+ no shutdown
+exit
+
+interface range gigabitEthernet0/2 - 10
+ description GUEST-PORTS
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree portfast
+ no shutdown
+exit
+
+interface range gigabitEthernet0/11 - 20
+ description IOT-PORTS
+ switchport mode access
+ switchport access vlan 60
+ spanning-tree portfast
+ no shutdown
+exit
+
+end
+write memory

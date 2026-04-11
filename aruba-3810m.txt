@@ -1,0 +1,77 @@
+Enabled the IP ROUTING in the aruba switch L3:
+
+ip routing
+
+
+Created VLANS:
+vlan 10
+   name "CORPORATE"
+   untagged 1-10
+   ip address 10.10.10.1 255.255.255.0
+   ip helper-address 10.10.50.10
+exit
+
+vlan 20
+   name "GUEST"
+   untagged 11-15
+   ip address 10.10.20.1 255.255.255.0
+   ip helper-address 10.10.50.10
+exit
+
+vlan 30
+   name "SECURITY"
+   untagged 16-18
+   ip address 10.10.30.1 255.255.255.0
+   ip helper-address 10.10.50.10
+exit
+
+vlan 40
+   name "SERVERS"
+   untagged 19-22
+   ip address 10.10.40.1 255.255.255.0
+   # Static IPs → no helper needed
+exit
+
+vlan 50
+   name "IOT"
+   untagged 23-24
+   ip address 10.10.50.1 255.255.255.0
+   ip helper-address 10.10.50.10
+exit
+
+vlan 60
+   name "DMZ"
+   ip address 10.10.60.1 255.255.255.0
+   # Static
+exit
+
+vlan 70
+   name "MGMT"
+   ip address 10.10.70.1 255.255.255.0
+   # Static
+exit
+
+Added trunk port to cisco 2960X:
+vlan 20,60
+   tagged 1/2
+exit
+
+routes to the router ISR 4331:
+
+conf t
+vlan 254
+   name "TRANSIT-TO-ROUTER"
+   untagged 1/1
+   ip address 10.255.255.2 255.255.255.252
+exit
+ip routing
+ip route 0.0.0.0/0 10.255.255.1
+write memory
+
+Added dhcp-server helper to the vlans 10,20,30,60:
+
+ip helper-address 10.15.40.10
+
+Enabled dhcp-server:
+
+dhcp-server enable
