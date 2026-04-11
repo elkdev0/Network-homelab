@@ -209,7 +209,7 @@ homelab/
 ## Author
 
 **Amr Elkheir**
-IT Student | Homelab Builder | Future Network Engineer
+IT/Network Student | Homelab Builder | Future Network Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/amre5/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com)
