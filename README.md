@@ -18,7 +18,7 @@ A hands-on enterprise-style home lab built to develop practical skills in switch
 
 ## Network Topology
 
-<img width="1928" height="1231" alt="image" src="https://github.com/user-attachments/assets/f9d0bdcf-cf76-4707-831f-77cf35a5170b" />
+<img width="2340" height="1412" alt="image" src="https://github.com/user-attachments/assets/4b17b2b0-8f6b-4c4f-99df-d3cd6e5f604b" />
 
 
 ```text
